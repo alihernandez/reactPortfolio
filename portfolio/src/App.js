@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import NaviBar from './components/Navbar/Navbar'
+import NaviBar from './components/Navbar/Navbar';
+import Projects from './components/Projects/Projects';
 
 
 function App() {
@@ -22,6 +23,17 @@ function App() {
       <Row>
         <Col md={12}>
           <h2>About Section Here</h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+          <h2>Contact</h2>
+          <p>Input form here</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Projects />
         </Col>
       </Row>
     </Container>
