@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -18,7 +19,7 @@ const NaviBar = (props) => {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-          Full Stack Developer
+          Alí Hernandez Full Stack Developer
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
@@ -30,7 +31,7 @@ const NaviBar = (props) => {
               <NavLink href="/components/">Resume</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Projects</NavLink>
+              <NavLink href="/projects">Projects</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/components/">Contact</NavLink>
