@@ -1,5 +1,14 @@
-import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
 const NaviBar = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -9,7 +18,9 @@ const NaviBar = (props) => {
   return (
     <div>
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">Full Stack Developer</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto">
+          Alí Hernandez Full Stack Developer
+        </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
@@ -20,7 +31,7 @@ const NaviBar = (props) => {
               <NavLink href="/components/">Resume</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Projects</NavLink>
+              <NavLink href="/projects">Projects</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/components/">Contact</NavLink>
@@ -33,6 +44,6 @@ const NaviBar = (props) => {
       </Navbar>
     </div>
   );
-}
+};
 
 export default NaviBar;
