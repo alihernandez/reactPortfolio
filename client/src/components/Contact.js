@@ -1,5 +1,6 @@
 import React from 'react';
-import './Contact.js';
+import './Contact.css';
+import imgBack from '../images/im4.jpg';
 
 const Contact = () => {
     return (
@@ -11,7 +12,7 @@ const Contact = () => {
                 <div className="back-form">
                     <div className="img-back">
                         <h4>Send your message</h4>
-                        <img src="" alt="" />
+                        <img src={imgBack} alt="" />
                     </div>
 
                     <form>
